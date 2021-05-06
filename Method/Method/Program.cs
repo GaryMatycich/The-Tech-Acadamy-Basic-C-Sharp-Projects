@@ -15,32 +15,32 @@ namespace Method
             Console.WriteLine("Please enter a number:");
             int userNum1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Please enter a second number or leave this line blank:");
-            string userString = Console.ReadLine();
-            // giving userNum2 a default value
-            int userNum2 = 0;
+            //Console.WriteLine("Please enter a second number or leave this line blank:");
+            //string userString = Console.ReadLine();
+            //// giving userNum2 a default value
+            //int userNum2 = 0;
 
-            // checking to see if the user entered a null value
-            if (!string.IsNullOrEmpty(userString))
-            {
-                // if they entered a number we use there input as normal
-                try
-                {
-                    int x = Convert.ToInt32(userString);
-                    userNum2 = x;
-                }
-                // if they entered a word we catch the exception
-                catch (Exception)
-                {
-                    Console.WriteLine("Please only enter a number or leave blank.");
-                }
-                finally
-                {
-                    Console.ReadLine();
-                }
-            }
+            //// checking to see if the user entered a null value
+            //if (!string.IsNullOrEmpty(userString))
+            //{
+            //    // if they entered a number we use there input as normal
+            //    try
+            //    {
+            //        int x = Convert.ToInt32(userString);
+            //        userNum2 = x;
+            //    }
+            //    // if they entered a word we catch the exception
+            //    catch (Exception)
+            //    {
+            //        Console.WriteLine("Please only enter a number or leave blank.");
+            //    }
+            //    finally
+            //    {
+            //        Console.ReadLine();
+            //    }
+            //}
 
-            int result = myClass.MyMethod(userNum1, userNum2);
+            int result = myClass.MyMethod(userNum1);
             Console.WriteLine(result);
             Console.ReadLine();
         }
