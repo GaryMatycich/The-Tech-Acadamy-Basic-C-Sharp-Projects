@@ -21,6 +21,7 @@ namespace Parsing_enums
                 Days dayValue = (Days)Enum.Parse(typeof(Days), userInput, true);
                 // printing the corrisponding enum value to screen
                 Console.WriteLine(dayValue);
+                Console.WriteLine(typeof(Days));
             }
             catch(Exception)
             {
