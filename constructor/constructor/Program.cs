@@ -16,6 +16,15 @@ namespace constructor
 
             // var keyword used to implicitly define a type
             var ID = new Guid();
+
+            // creating a new class using a alternate constructor with default parameters
+            MyClass myClass1 = new MyClass();
+            Console.WriteLine($"{myClass1.favoritNumber} {myClass1.randomWord}");
+
+            // creating a new class with a constructor that requires parameters manually entered
+            MyClass myClass2 = new MyClass(25, "Banana");
+            Console.WriteLine($"{myClass2.favoritNumber} {myClass2.randomWord}");
+            Console.ReadLine();
         }
     }
 }
