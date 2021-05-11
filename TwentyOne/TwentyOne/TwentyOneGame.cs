@@ -13,7 +13,7 @@ namespace TwentyOne
         public TwentyOneDealer Dealer { get; set; }
 
         public override void Play()
-        {
+         {
             Dealer = new TwentyOneDealer();
             foreach (Player player in Players)
             {
